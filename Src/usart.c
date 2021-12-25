@@ -92,6 +92,8 @@ void MX_USART2_UART_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN USART2_Init 2 */
+  MX_TIM2_Init();
+  HAL_TIM_Base_Start_IT(&htim3);
   USART2_RX_STA=0;
   /* USER CODE END USART2_Init 2 */
 
