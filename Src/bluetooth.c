@@ -164,8 +164,8 @@ void HC05_Sta_Show(u8 uartsta)
 			POINT_COLOR=BLUE;
 			HC05_STA=1;
 			   LCD_Fill(110,20,230,42,WHITE);
-			   LED0=1;
-			   LED1=0;
+			   LED0_Value = 1;
+			   LED1_Value = 0;
 			 LCD_ShowString(120,20,120,16,16,"STA:Connected");
 			printf("STA:Connected\r\n");
 
@@ -177,8 +177,8 @@ void HC05_Sta_Show(u8 uartsta)
 		{
 			POINT_COLOR=RED;
 			HC05_STA=0;
-			   LED0=0;
-			   LED1=1;
+			   LED0_Value = 0;
+			   LED1_Value = 1;
 			 LCD_ShowString(120,20,120,16,16,"STA:Disconnect");
 			 printf("STA:Disconnect\r\n");
 		}
